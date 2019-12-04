@@ -67,8 +67,8 @@ int main() {
     long wires_total = LONG_MAX;
     for(auto p: intersect){
         lowest = min(abs(p.first) + abs(p.second), lowest);
-        long wire1 = lengths[0][{p.first, p.second}];
-        long wire2 = lengths[1][{p.first, p.second}];
+        long wire1 = lengths[0][p];
+        long wire2 = lengths[1][p];
         if(wire1 + wire2 < wires_total){
             wires_total = wire1 + wire2;
             wire1_len = wire1;

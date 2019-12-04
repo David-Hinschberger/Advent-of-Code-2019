@@ -38,7 +38,7 @@ int main() {
     count = 0;
     for (auto i = min; i <= max; i++) {
         bool valid = false;
-        int seen[10] {};
+        int seen[10]{};
         string str_rep = to_string(i);
         for (int j = 0; j < 5; j++) {
             int a = str_rep[j] - '0';
@@ -53,7 +53,7 @@ int main() {
             seen[a]++;
         }
         seen[str_rep[5] - '0']++;
-        if(valid && any_of(&seen[0], &seen[10], [](int i){ return i == 2;})){
+        if (valid && any_of(&seen[0], &seen[10], [](int i) { return i == 2; })) {
             count++;
         }
     }
