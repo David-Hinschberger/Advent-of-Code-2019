@@ -6,7 +6,7 @@ using namespace std;
 
 
 int main() {
-    freopen("input.txt", "r", stdin);
+//    freopen("input.txt", "r", stdin);
 //    string input ("347312-805915");
 
     ull min = 347312;
