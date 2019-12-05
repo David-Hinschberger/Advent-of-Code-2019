@@ -2,7 +2,7 @@
 
 #define ll long long
 using namespace std;
-//part 1 change input to 1, part2 change input to 2
+//part 1 change input to 1, part2 change input to 5
 vector<ll> input{5};
 vector<ll> output;
 int input_index = 0;
